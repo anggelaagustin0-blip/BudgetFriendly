@@ -2,90 +2,237 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Surabaya On a Budget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surabaya Life On a Budget</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fdf6e3; /* cream */
-      color: #4e342e; /* coklat moka */
+      background-color: #f5f5dc; /* cream */
+      color: #4b2e2e; /* coklat */
     }
-    .navbar {
-      background-color: #6d4c41; /* moka */
+    header {
+      background-color: #4b2e2e;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
     }
-    .navbar-brand, .nav-link {
-      color: #fff !important;
+    nav {
+      background-color: #d2b48c; /* coklat muda */
+    }
+    .nav-link {
+      color: #4b2e2e !important;
       font-weight: bold;
     }
-    .nav-link:hover {
-      color: #fbc02d !important; /* aksen kuning */
+    .carousel-item img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
     }
-    .footer {
-      background-color: #4e342e; /* coklat tua */
+    footer {
+      background-color: #4b2e2e;
       color: #fff;
-      padding: 20px 0;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
-    .footer a {
-      color: #fbc02d;
-      text-decoration: none;
+    .section-title {
+      text-align: center;
+      margin: 20px 0;
+      font-weight: bold;
     }
-    .footer a:hover {
-      text-decoration: underline;
+    .btn-explore {
+      background-color: #4b2e2e;
+      color: #fff;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Surabaya On a Budget</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#guide">Budget Guide</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-        </ul>
+<header>
+  <h1>Surabaya Life On a Budget</h1>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#budget">Budget Guide</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HOME TAB -->
+<section id="home" class="container mt-4">
+  <h2 class="section-title">Home</h2>
+
+  <!-- Carousel -->
+  <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.pinimg.com/1200x/93/37/d3/9337d3617769e75118b30fe7e678f241.jpg" alt="Mahasiswa">
+        <div class="carousel-caption">
+          <h5>Mahasiswa & Tantangan Biaya Hidup di Surabaya</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/74/05/6a/74056a93130ac17df05cf3c077abf9cc.jpg" alt="Hemat">
+        <div class="carousel-caption">
+          <h5>Cara Hidup Hemat Sebagai Mahasiswa</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/2f/2b/67/2f2b6718ae8ac0a4aff5ff68d75dbb93.jpg" alt="Panduan">
+        <div class="carousel-caption">
+          <h5>Panduan Budget Mahasiswa Di Surabaya</h5>
+        </div>
       </div>
     </div>
-  </nav>
-
-  <!-- Konten -->
-  <div class="container my-5">
-    <section id="home">
-      <h2>Selamat Datang di Surabaya On a Budget</h2>
-      <p>Temukan cara menikmati Surabaya dengan hemat tanpa kehilangan keseruan...</p>
-    </section>
-
-    <section id="guide" class="mt-4">
-      <h2>Budget Guide</h2>
-      <p>Panduan hemat untuk tempat makan, minuman segar, dan belanja pakaian murah di Surabaya...</p>
-    </section>
-
-    <section id="about" class="mt-4">
-      <h2>About Us</h2>
-      <p>Kami berbagi tips dan rekomendasi agar hidup hemat di Surabaya tetap menyenangkan...</p>
-    </section>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <p>&copy; 2026 Surabaya On a Budget</p>
-      <p>Ikuti kami di 
-        <a href="#">Instagram</a> | 
-        <a href="#">Facebook</a>
-      </p>
-    </div>
-  </footer>
+  <!-- Deskripsi -->
+  <p class="mt-4">
+    Surabaya merupakan salah satu kota pendidikan besar di Indonesia. Banyak mahasiswa dari berbagai daerah datang untuk menempuh pendidikan di kampus seperti Institut Teknologi Sepuluh Nopember. Namun, biaya hidup di kota besar sering menjadi tantangan bagi mahasiswa, terutama bagi mahasiswa perantauan. Pengeluaran seperti makanan, transportasi, tempat tinggal, dan kebutuhan sehari-hari dapat menjadi cukup tinggi jika tidak dikelola dengan baik.
+  </p>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Input rekomendasi -->
+  <div class="mt-4">
+    <label>Kos (Rp):</label>
+    <input type="number" id="kosInput" class="form-control" placeholder="Masukkan harga kos">
+    <label class="mt-2">Makan (Rp):</label>
+    <input type="number" id="makanInput" class="form-control" placeholder="Masukkan budget makan">
+    <label class="mt-2">Transportasi (Rp):</label>
+    <input type="number" id="transportInput" class="form-control" placeholder="Masukkan budget transportasi">
+    <button class="btn btn-explore mt-3" onclick="rekomendasi()">Dapatkan Rekomendasi</button>
+    <p id="outputRekomendasi" class="mt-2"></p>
+  </div>
+
+  <!-- Reality Check & Expectation -->
+  <h4 class="mt-4">Reality Check vs Expectation</h4>
+  <p>Isi harga objek sesuai kondisi nyata lalu bandingkan dengan target budget.</p>
+
+  <!-- Solusi -->
+  <h4 class="mt-4">Solusi</h4>
+  <ul>
+    <li>Catat pengeluaran</li>
+    <li>Tentukan budget</li>
+    <li>Sisihkan tabungan</li>
+  </ul>
+</section>
+
+<!-- BUDGET GUIDE TAB -->
+<!-- BUDGET GUIDE TAB -->
+<section id="budget" class="container mt-4">
+  <h2 class="section-title">Budget Guide</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <h5>Wisata Low Budget</h5>
+      <button class="btn btn-explore" onclick="showSection('wisata')">Explore</button>
+    </div>
+    <div class="col-md-4">
+      <h5>Nongki Low Budget</h5>
+      <button class="btn btn-explore" onclick="showSection('nongki')">Explore</button>
+    </div>
+    <div class="col-md-4">
+      <h5>Tips</h5>
+      <button class="btn btn-explore" onclick="showSection('tips')">Explore</button>
+    </div>
+  </div>
+
+  <!-- Wisata Carousel -->
+  <div id="wisata" class="mt-4 d-none">
+    <h4 class="section-title">Daftar Wisata Low Budget</h4>
+    <div id="wisataCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://travelspromo.com/wp-content/uploads/2020/02/Taman-Bungkul-Surabaya.-Foto-Gmap-Tri-Purnama.jpg" alt="Wisata 1">
+          <div class="carousel-caption"><h5>Taman Bungkul</h5></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.genpi.co/uploads/jatim/arsip/normal/2022/07/09/kebun-bibit-wonorejo-surabaya-foto-instagram-banggasurab-cnhf.jpg" alt="Wisata 2">
+          <div class="carousel-caption"><h5>Kebun Bibit Surabaya</h5></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.bangsaonline.com/images/uploads/berita/67a66fa0754fed7fdb1f53e36368e135.jpg" alt="Wisata 3">
+          <div class="carousel-caption"><h5>Wisata Religi Sunan Ampel</h5></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nongki Carousel -->
+  <div id="nongki" class="mt-4 d-none">
+    <h4 class="section-title">Daftar Nongki Low Budget</h4>
+    <div id="nongkiCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.pinimg.com/1200x/83/be/75/83be75cbd988362b4c4d7d4cd30af9bb.jpg" alt="Cafe 1">
+          <div class="carousel-caption"><h5>Kedai Kopi Pinggir Jalan</h5></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cms.sinarmasland.com/uploads/small_300801308_482068037267693_5083613045087155536_n_5a10093b7c.jpg" alt="Cafe 2">
+          <div class="carousel-caption"><h5>Warung Angkringan</h5></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://asset.kompas.com/crops/u0GsE5630x5myAevxZGdGLx_CBQ=/0x0:1280x853/1200x800/data/photo/2022/09/09/631a845ec178c.jpeg" alt="Cafe 3">
+          <div class="carousel-caption"><h5>Cafe Mahasiswa</h5></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tips Section -->
+  <div id="tips" class="mt-4 d-none">
+    <h4 class="section-title">Tips Hemat</h4>
+    <ul>
+      <li>Bawa bekal dari rumah</li>
+      <li>Gunakan transportasi umum</li>
+      <li>Manfaatkan promo mahasiswa</li>
+      <li>Belanja di pasar tradisional</li>
+    </ul>
+  </div>
+
+  <div class="text-left mt-4">
+    <button class="btn btn-explore" onclick="showSection('home')">Menu</button>
+  </div>
+</section>
+
+<!-- ABOUT US TAB -->
+<section id="about" class="container mt-4">
+  <h2 class="section-title">About Us</h2>
+  <p>
+    Website ini dibuat untuk membantu mahasiswa dan masyarakat menemukan gaya hidup hemat di Surabaya. Fokus kami adalah memberikan panduan, tips, dan rekomendasi dengan harga terjangkau agar tetap bisa menikmati kehidupan di kota besar tanpa terbebani biaya.
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>Instagram: @surabayabudgetlife | &copy; 2026 Surabaya Life On a Budget</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function showSection(sectionId) {
+    // sembunyikan semua
+    document.getElementById('wisata').classList.add('d-none');
+    document.getElementById('nongki').classList.add('d-none');
+    document.getElementById('tips').classList.add('d-none');
+    // tampilkan sesuai tombol
+    if(sectionId !== 'home'){
+      document.getElementById(sectionId).classList.remove('d-none');
+    }
+    // scroll ke bagian yang ditampilkan
+    if(sectionId !== 'home'){
+      document.getElementById(sectionId).scrollIntoView({behavior:'smooth'});
+    } else {
+      document.getElementById('home').scrollIntoView({behavior:'smooth'});
+    }
+  }
+</script>
+
 </body>
 </html>
