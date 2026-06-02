@@ -31,6 +31,25 @@
   </div>
 </header>
 
+<div class="login-overlay" id="login-overlay">
+  <div class="login-box">
+    <div class="login-logo">🌴</div>
+    <h2>Surabaya On a Budget</h2>
+    <p>Silakan masuk untuk mengakses panduan hemat</p>
+    <form onsubmit="handleLogin(event)">
+      <div class="input-group">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" placeholder="Masukkan username" required>
+      </div>
+      <div class="input-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Masukkan password" required>
+      </div>
+      <button type="submit" class="btn-login">Masuk</button>
+    </form>
+  </div>
+</div>
+
 <!-- HOME -->
 <section id="home">
   <div class="home-hero">
